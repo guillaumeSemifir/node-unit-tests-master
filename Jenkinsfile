@@ -8,6 +8,10 @@ pipeline {
 		
 			steps {
 				echo 'building the application...'
+				script {
+					def test = 2 + 2 < 3 ? 'ok' : 'not ok'
+					echo test
+				}
 			}
 		}
 		
